@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from bot_commands import *
 
-app = ApplicationBuilder().token("5925647760:AAHvsVdgAlRk7Nk3dbZOfIqs9USjd1FkkV8").build()
+app = ApplicationBuilder().token("TOKEN").build()
 
 app.add_handler(CommandHandler('search', search_command))
 app.add_handler(CommandHandler('help', help_command))
